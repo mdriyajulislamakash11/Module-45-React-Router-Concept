@@ -8,7 +8,7 @@ const Home = () => {
             <Header />
             <h2>this is home components</h2>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur .</p>
 
             <Outlet />
         </div>
