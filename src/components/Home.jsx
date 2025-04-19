@@ -6,9 +6,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <h2>this is home components</h2>
 
-            <p>Lorem, ipsum dolor sit amet consectetur .</p>
 
             <Outlet />
         </div>
