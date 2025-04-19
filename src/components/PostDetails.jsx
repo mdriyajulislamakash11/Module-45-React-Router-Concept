@@ -6,6 +6,7 @@ const PostDetails = () => {
 
   const {id, title, body } = post;
 
+
   const {postId} = useParams();
   console.log(postId) 
 
