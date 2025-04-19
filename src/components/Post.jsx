@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Post = ({ post }) => {
   const { id, title, body } = post;
+
+  const navigate = useNavigate();
+
+  const handleShowDetails = () => {
+    navigate(`/post/${id}`)
+  }
 
   const postStyle = {
     border: "2px solid red",
@@ -18,6 +24,10 @@ const Post = ({ post }) => {
       </p>
 
       <Link to={`/post/${id}`}>Posts Details</Link>
+      <Link to={`/post/${id}`}>
+      <button>Show Details</button>
+      </Link>
+      <button onClick={handleShowDetails}>Click to see Details</button>
     </div>
   );
 };
