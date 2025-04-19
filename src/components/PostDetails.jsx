@@ -6,8 +6,8 @@ const PostDetails = () => {
 
   const {id, title, body } = post;
 
-  const params = useParams();
-  console.log(params) 
+  const {postId} = useParams();
+  console.log(postId) 
 
   const navigate = useNavigate();
 
